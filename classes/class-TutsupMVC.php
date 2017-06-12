@@ -54,7 +54,7 @@ class TutsupMVC {
      * o controlado e a ação (método).
      */
     public function __construct() {
-
+        
         // Obtém os valores do controlador, ação e parâmetros da URL.
         // E configura as propriedades da classe.
         $this->get_url_data();
@@ -142,11 +142,11 @@ class TutsupMVC {
     public function get_url_data() {
 
         // Verifica se o parâmetro path foi enviado
+       
         if (isset($_GET['path'])) {
 
             // Captura o valor de $_GET['path']
             $path = $_GET['path'];
-
             // Limpa os dados
             $path = rtrim($path, '/');
             $path = filter_var($path, FILTER_SANITIZE_URL);

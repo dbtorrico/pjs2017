@@ -75,7 +75,7 @@ class MainController extends UserLogin {
         $this->db = new TutsupDB();
 
         // Phpass
-        //$this->phpass = new PasswordHash(8, false);
+        $this->phpass = new PasswordHash(8, false);
 
         // Parâmetros
         $this->parametros = $parametros;

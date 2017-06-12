@@ -34,5 +34,6 @@ define('DEBUG', true);
  * Não edite daqui em diante
  */
 // Carrega o loader, que vai carregar a aplicação inteira
+
 require_once ABSPATH . '/loader.php';
 ?>
